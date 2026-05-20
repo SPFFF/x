@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ASAPH LIVE</title>
+    <script>
+      var l = window.location;
+      var seg = l.pathname.slice(1).split('/').slice(1).join('/');
+      l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/x/' + '?p=/' + (seg ? seg + '/' : '') + l.search.slice(1) + '#' + l.pathname.slice(1));
+    </script>
+  </head>
+  <body></body>
+</html>
